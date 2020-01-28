@@ -1,0 +1,22 @@
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.exe
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.deps.json
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.runtimeconfig.json
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.runtimeconfig.dev.json
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.dll
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.pdb
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\obj\Debug\netcoreapp3.1\FunctionalPrograms.csprojAssemblyReference.cache
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\obj\Debug\netcoreapp3.1\FunctionalPrograms.AssemblyInfoInputs.cache
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\obj\Debug\netcoreapp3.1\FunctionalPrograms.AssemblyInfo.cs
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\obj\Debug\netcoreapp3.1\FunctionalPrograms.dll
+C:\Users\Chetan Choudari\source\repos\FunctionalPrograms\obj\Debug\netcoreapp3.1\FunctionalPrograms.pdb
+E:\.Net\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.exe
+E:\.Net\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.deps.json
+E:\.Net\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.runtimeconfig.json
+E:\.Net\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.runtimeconfig.dev.json
+E:\.Net\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.dll
+E:\.Net\FunctionalPrograms\bin\Debug\netcoreapp3.1\FunctionalPrograms.pdb
+E:\.Net\FunctionalPrograms\obj\Debug\netcoreapp3.1\FunctionalPrograms.AssemblyInfoInputs.cache
+E:\.Net\FunctionalPrograms\obj\Debug\netcoreapp3.1\FunctionalPrograms.AssemblyInfo.cs
+E:\.Net\FunctionalPrograms\obj\Debug\netcoreapp3.1\FunctionalPrograms.dll
+E:\.Net\FunctionalPrograms\obj\Debug\netcoreapp3.1\FunctionalPrograms.pdb
+E:\.Net\FunctionalPrograms\obj\Debug\netcoreapp3.1\FunctionalPrograms.csprojAssemblyReference.cache
