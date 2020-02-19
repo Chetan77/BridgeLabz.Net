@@ -14,7 +14,7 @@ namespace TestUnit
         public void TestForNull()
         {
             string name = RegexPattern.Name("");
-            Assert.Equal(null, name);
+            Assert.Null(name);
         }
         [Fact]
         public void TestForLastName()
@@ -26,7 +26,7 @@ namespace TestUnit
         public void TestNull()
         {
             string name = RegexPattern.Name("");
-            Assert.Equal(null, name);
+            Assert.Null(name);
         }
         [Fact]
         public void TestNumber()
@@ -49,24 +49,25 @@ namespace TestUnit
             string actualEmail = RegexPattern.Email(email);
             Assert.Equal(email, actualEmail);
         }
-        public void TestEmailNull()
+        [Fact]
+        public void TestEmailNullOrNot()
         {
-            string email = "";
-            string actualEmail = RegexPattern.Email(email);
-            Assert.Equal(null, actualEmail);
+            string mail = "";
+            string actualEmail = RegexPattern.Email(mail);
+            Assert.Null(actualEmail);
         }
         [Fact]
-        public void TestPassword()
-        {
-            string password = "Chet@0987";
+        public void TestPassword() { 
+            string password = "FFddhet@0987";
             string actualPassword = RegexPattern.Password(password);
             Assert.Equal(password, actualPassword);
         }
+        [Fact]
         public void TestPasswordNull()
         {
             string password = "";
             string actualPassword = RegexPattern.Password(password);
-            Assert.Equal(null, actualPassword);
+            Assert.Null(actualPassword);
         }
     }
 }
