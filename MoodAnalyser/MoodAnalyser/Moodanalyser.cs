@@ -14,7 +14,6 @@ namespace MoodAnalyser
         {
             this.message = message;
         }
-
         public static string AnalyseMood(string message)
         {
             if (message.ToLower().Contains("sad"))
@@ -30,7 +29,7 @@ namespace MoodAnalyser
             Console.WriteLine("returning HAPPY");
             return "HAPPY";
         }
-       /* public string AnalyseMoo()
+        public string AnalyseMoo()
         {
             if (message.ToLower().Contains("sad"))
             {
@@ -44,6 +43,6 @@ namespace MoodAnalyser
             }
             Console.WriteLine("returning HAPPY");
             return "HAPPY";
-        }*/
+        }
     }
 }
