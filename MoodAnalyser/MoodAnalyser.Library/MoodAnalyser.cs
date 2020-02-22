@@ -6,14 +6,23 @@ namespace MoodAnalyserLibrary
 {
     public class MoodAnalyser
     {
-        public static string AnalyseMood(string message)
+        string msg;
+       public MoodAnalyser()
         {
-            if (message.ToLower().Contains("sad"))
+
+        }
+       public MoodAnalyser(string msg)
+        {
+            this.msg = msg;
+        }
+        public string AnalyseMood()
+        {
+            if (msg.ToLower().Contains("sad"))
             {
                 Console.WriteLine("returning SAD");
                 return "SAD";
             }
-            else if (message.ToLower().Contains("happy"))
+            else if (msg.ToLower().Contains("happy"))
             {
                 Console.WriteLine("returning HAPPY");
                 return "HAPPY";
