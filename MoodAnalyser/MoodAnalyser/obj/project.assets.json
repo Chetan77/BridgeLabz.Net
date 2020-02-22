@@ -1438,6 +1438,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "MoodAnalyserLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MoodAnalyserLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoodAnalyserLibrary.dll": {}
+        }
       }
     }
   },
@@ -5256,11 +5266,17 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "MoodAnalyserLibrary/1.0.0": {
+      "type": "project",
+      "path": "../MoodAnalyser.Library/MoodAnalyserLibrary.csproj",
+      "msbuildProject": "../MoodAnalyser.Library/MoodAnalyserLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.2.0",
+      "MoodAnalyserLibrary >= 1.0.0",
       "NUnit3TestAdapter >= 3.15.1",
       "nunit >= 3.12.0"
     ]
@@ -5271,11 +5287,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\Chetan\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser.csproj",
-      "projectName": "MoodAnalyser",
-      "projectPath": "C:\\Users\\Admin\\source\\Chetan\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\Chetan\\mood\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser\\MoodAnalyserProject.csproj",
+      "projectName": "MoodAnalyserProject",
+      "projectPath": "C:\\Users\\Admin\\source\\Chetan\\mood\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser\\MoodAnalyserProject.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\Chetan\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\Chetan\\mood\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5290,7 +5306,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Admin\\source\\Chetan\\mood\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser.Library\\MoodAnalyserLibrary.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\Chetan\\mood\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser.Library\\MoodAnalyserLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
