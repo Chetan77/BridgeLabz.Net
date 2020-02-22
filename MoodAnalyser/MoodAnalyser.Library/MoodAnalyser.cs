@@ -17,17 +17,24 @@ namespace MoodAnalyserLibrary
         }
         public string AnalyseMood()
         {
-            if (msg.ToLower().Contains("sad"))
+            try
             {
-                Console.WriteLine("returning SAD");
-                return "SAD";
-            }
-            else if (msg.ToLower().Contains("happy"))
-            {
+                if (msg.ToLower().Contains("sad"))
+                {
+                    Console.WriteLine("returning SAD");
+                    return "SAD";
+                }
+                else if (msg.ToLower().Contains("happy"))
+                {
+                    Console.WriteLine("returning HAPPY");
+                    return "HAPPY";
+                }
                 Console.WriteLine("returning HAPPY");
+            }
+            catch (Exception)
+            {
                 return "HAPPY";
             }
-            Console.WriteLine("returning HAPPY");
             return "HAPPY";
         }
     }

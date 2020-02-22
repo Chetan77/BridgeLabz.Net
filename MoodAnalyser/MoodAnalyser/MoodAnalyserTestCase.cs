@@ -20,9 +20,16 @@ namespace MoodAnalyserProject
             Assert.AreEqual("HAPPY", actual);
         }
         [Test]
-        public void GivenAnyMessage_WhenAnalyse_ReturnAny()
+        public void GivenAnyMessage_WhenAnalyse_ReturnHappy()
         {
             MoodAnalyser moodAnalyser = new MoodAnalyser("i am in any mood");
+            string actual = moodAnalyser.AnalyseMood();
+            Assert.AreEqual("HAPPY", actual);
+        }
+        [Test]
+        public void GivenNullMessage_WhenAnalyse_ReturnHappy()
+        {
+            MoodAnalyser moodAnalyser = new MoodAnalyser(null);
             string actual = moodAnalyser.AnalyseMood();
             Assert.AreEqual("HAPPY", actual);
         }
