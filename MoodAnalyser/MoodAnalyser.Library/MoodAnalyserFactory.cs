@@ -13,12 +13,18 @@ namespace MoodAnalyserLibrary
             try
             {
                 Type type = Type.GetType("MoodAnalyserLibrary." + className);
+                if (type != null)
+                {
                 Object obj = Activator.CreateInstance(type);
                 return obj;
+                }
+                else
+                {
+                    throw new MoodAnalysisException(MoodAnalysisException.MoodList.NoSuch_Class, "no such class present");
+                }
 
-                throw new MoodAnalysisException(MoodAnalysisException.MoodList.NoSuch_Class, "no such class present");
             }
-            catch (Exception)
+            catch (NullReferenceException)
             {
                 throw new MoodAnalysisException(MoodAnalysisException.MoodList.NoSuch_Class, "no such class present");
             }

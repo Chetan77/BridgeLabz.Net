@@ -33,6 +33,7 @@ namespace MoodAnalyserLibrary
                 {
                     throw new MoodAnalysisException(MoodAnalysisException.MoodList.Empty_Mood, "given mood is empty, please provide some mood");
                 }
+                
             }
             //catch (MoodAnalysisException)
             //{
