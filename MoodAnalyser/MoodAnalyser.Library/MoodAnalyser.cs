@@ -29,11 +29,19 @@ namespace MoodAnalyserLibrary
                     Console.WriteLine("returning HAPPY");
                     return "HAPPY";
                 }
-                Console.WriteLine("returning HAPPY");
+                else if (msg.Length == 0)
+                {
+                    throw new MoodAnalysisException(MoodAnalysisException.MoodList.Empty_Mood, "given mood is empty, please provide some mood");
+                }
             }
-            catch (Exception)
+            catch (MoodAnalysisException)
             {
-                return "HAPPY";
+                throw new MoodAnalysisException(MoodAnalysisException.MoodList.Empty_Mood, "given mood is empty, please provide some mood");
+                //return "HAPPY";
+            }
+            catch (NullReferenceException)
+            {
+                throw new MoodAnalysisException(MoodAnalysisException.MoodList.No_Mood, "given mood is null,please provide some mood");
             }
             return "HAPPY";
         }
