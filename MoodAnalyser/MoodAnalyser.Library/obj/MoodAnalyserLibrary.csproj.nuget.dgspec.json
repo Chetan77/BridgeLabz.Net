@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\Chetan\\moodanalyser refactor\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser.Library\\MoodAnalyserLibrary.csproj": {}
+    "C:\\Users\\Admin\\source\\Chetan\\moodanalyser refactor\\MoodAnalyser\\MoodAnalyser.Library\\MoodAnalyserLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\Chetan\\moodanalyser refactor\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser.Library\\MoodAnalyserLibrary.csproj": {
+    "C:\\Users\\Admin\\source\\Chetan\\moodanalyser refactor\\MoodAnalyser\\MoodAnalyser.Library\\MoodAnalyserLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\Chetan\\moodanalyser refactor\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser.Library\\MoodAnalyserLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\Chetan\\moodanalyser refactor\\MoodAnalyser\\MoodAnalyser.Library\\MoodAnalyserLibrary.csproj",
         "projectName": "MoodAnalyserLibrary",
-        "projectPath": "C:\\Users\\Admin\\source\\Chetan\\moodanalyser refactor\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser.Library\\MoodAnalyserLibrary.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\Chetan\\moodanalyser refactor\\MoodAnalyser\\MoodAnalyser.Library\\MoodAnalyserLibrary.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\Chetan\\moodanalyser refactor\\MoodAnalyser\\MoodAnalyser\\MoodAnalyser.Library\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\Chetan\\moodanalyser refactor\\MoodAnalyser\\MoodAnalyser.Library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

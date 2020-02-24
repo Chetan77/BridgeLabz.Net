@@ -34,11 +34,11 @@ namespace MoodAnalyserLibrary
                     throw new MoodAnalysisException(MoodAnalysisException.MoodList.Empty_Mood, "given mood is empty, please provide some mood");
                 }
             }
-            catch (MoodAnalysisException)
-            {
-                throw new MoodAnalysisException(MoodAnalysisException.MoodList.Empty_Mood, "given mood is empty, please provide some mood");
-                //return "HAPPY";
-            }
+            //catch (MoodAnalysisException)
+            //{
+            //    throw new MoodAnalysisException(MoodAnalysisException.MoodList.Empty_Mood, "given mood is empty, please provide some mood");
+            //    //return "HAPPY";
+            //}
             catch (NullReferenceException)
             {
                 throw new MoodAnalysisException(MoodAnalysisException.MoodList.No_Mood, "given mood is null,please provide some mood");

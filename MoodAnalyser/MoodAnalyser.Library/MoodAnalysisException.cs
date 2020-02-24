@@ -8,7 +8,7 @@ namespace MoodAnalyserLibrary
     {
         public enum MoodList
         {
-            Empty_Mood,No_Mood
+            Empty_Mood,No_Mood,NoSuch_Class
         }
         public string message;
         public MoodList moodList;

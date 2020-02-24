@@ -47,5 +47,12 @@ namespace MoodAnalyserProject
             var actual = Assert.Throws<MoodAnalysisException>(() => moodAnalyser.AnalyseMood());
             Assert.AreEqual(MoodAnalysisException.MoodList.Empty_Mood, actual.moodList);
         }
+        [Test]
+        public void GivenMoodAnalyserClassName_WhenAnalyse_ReturnMoodAnalyserInstance()
+        {
+            object moodanalyser= MoodAnalyserFactory.CreateInstance("MoodAnalyser");
+            object expected = new MoodAnalyser();
+            Assert.AreEqual(expected.GetType(), moodanalyser.GetType());
+        }
     }
 }
