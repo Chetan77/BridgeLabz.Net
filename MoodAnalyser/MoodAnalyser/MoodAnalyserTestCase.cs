@@ -57,7 +57,7 @@ namespace MoodAnalyserProject
         [Test]
         public void GivenImproperClassName_WhenAnalyse_ThrowMoodAnalysisException()
         {
-            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserFactory.CreateInstance("Mood"));
+            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserReflector.CreateInstance("Mood"));
             Assert.AreEqual(MoodAnalysisException.MoodList.NoSuch_Class, actual.moodList);
         }
         [Test]
@@ -69,14 +69,21 @@ namespace MoodAnalyserProject
         [Test]
         public void GivenImproperClassNameWithMessage_WhenAnalyse_ThrowMoodAnalysisException()
         {
-            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserFactory.CreateInstance("MoodAlyser", "i am in happy mode"));
+            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserReflector.CreateInstance("MoodAlyser", "i am in happy mode"));
             Assert.AreEqual(MoodAnalysisException.MoodList.NoSuch_Class, actual.moodList);
         }
         [Test]
         public void GivenClassNameWithImproperConstructor_WhenAnalyse_ThrowMoodAnalysisException()
         {
-            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserFactory.CreateInstance("MoodAnalyser", 5432.675));
+            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserReflector.CreateInstance("MoodAnalyser", 5432.675));
             Assert.AreEqual(MoodAnalysisException.MoodList.No_Such_Method, actual.moodList);
+        }
+        [Test]
+        public void UsingReflectionWhenGivenHappyMessageProper_WhenAnalyse_ShouldReturnHAPPYMood()
+        {
+            MoodAnalyser moodAnalyser = (MoodAnalyser)MoodAnalyserReflector.CreateInstance("MoodAnalyser", "i am in happy mood");
+            string actual = moodAnalyser.AnalyseMood();
+            Assert.AreEqual("HAPPY", actual);
         }
     }
 }

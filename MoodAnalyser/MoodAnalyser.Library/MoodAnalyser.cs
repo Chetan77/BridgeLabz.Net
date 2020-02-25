@@ -54,7 +54,7 @@ namespace MoodAnalyserLibrary
         }
         public override bool Equals(object obj)
         {
-            object moodanalyser = MoodAnalyserFactory.CreateInstance("MoodAnalyser","hfdhtjgfjyf");
+            object moodanalyser = MoodAnalyserReflector.CreateInstance("MoodAnalyser","hfdhtjgfjyf");
             if (moodanalyser.GetType().Equals(obj.GetType()))
             {
                 return true;
