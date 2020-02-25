@@ -20,7 +20,7 @@ namespace MoodAnalyserProject
             string actual = moodAnalyser.AnalyseMood();
             Assert.AreEqual("HAPPY", actual);
         }
-        [Test]
+       /* [Test]
         public void GivenAnyMessage_WhenAnalyse_ReturnHappy()
         {
             MoodAnalyser moodAnalyser = new MoodAnalyser("i am in any mood");
@@ -33,7 +33,7 @@ namespace MoodAnalyserProject
             MoodAnalyser moodAnalyser = new MoodAnalyser(null);
             string actual = moodAnalyser.AnalyseMood();
             Assert.AreEqual("HAPPY", actual);
-        }
+        }*/
         [Test]
         public void GivenNull_whenAnalys_ThrowMoodAnalysisExceptionTest()
         {
@@ -66,6 +66,11 @@ namespace MoodAnalyserProject
             MoodAnalyser expected = new MoodAnalyser("jkhdgf");
             Assert.IsTrue(expected.Equals(expected));
         }
-
+        [Test]
+        public void GivenImproperClassNameWithMessage_WhenAnalyse_ThrowMoodAnalysisException()
+        {
+            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserFactory.CreateInstance("MoodAnaser", "i am in happy mode"));
+            Assert.AreEqual(MoodAnalysisException.MoodList.NoSuch_Class, actual.moodList);
+        }
     }
 }
