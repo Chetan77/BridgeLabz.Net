@@ -8,7 +8,7 @@ namespace MoodAnalyserLibrary
     public class MoodAnalyserFactory
     {
 
-        public static Object CreateInstance(string className, params string[] opt)
+        public static Object CreateInstance(string className, params object[] opt)
         {
             try
             {
@@ -26,6 +26,10 @@ namespace MoodAnalyserLibrary
             catch (NullReferenceException)
             {
                 throw new MoodAnalysisException(MoodAnalysisException.MoodList.NoSuch_Class, "no such class present");
+            }
+            catch (MissingMethodException)
+            {
+                throw new MoodAnalysisException(MoodAnalysisException.MoodList.No_Such_Method, "No such method exception");
             }
         }
 
