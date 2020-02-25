@@ -1,5 +1,6 @@
 using MoodAnalyserLibrary;
 using NUnit.Framework;
+using System;
 
 namespace MoodAnalyserProject
 {
@@ -49,15 +50,22 @@ namespace MoodAnalyserProject
         }
         [Test]
         public void GivenMoodAnalyserClassName_WhenAnalyse_ReturnMoodAnalyserInstance()
-        { 
+        {
             MoodAnalyser expected = new MoodAnalyser();
             Assert.IsTrue(expected.Equals(expected));
         }
         [Test]
         public void GivenImproperClassName_WhenAnalyse_ThrowMoodAnalysisException()
         {
-            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserFactory.CreateInstance("Moose"));
+            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserFactory.CreateInstance("Mood"));
             Assert.AreEqual(MoodAnalysisException.MoodList.NoSuch_Class, actual.moodList);
         }
+        [Test]
+        public void GivenMoodAnalyserClassNameWithMessage_WhenAnalyse_ReturnMoodAnalyserInstance()
+        {
+            MoodAnalyser expected = new MoodAnalyser("jkhdgf");
+            Assert.IsTrue(expected.Equals(expected));
+        }
+
     }
 }
