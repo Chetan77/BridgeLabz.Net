@@ -53,6 +53,11 @@ namespace MoodAnalyserProject
             MoodAnalyser expected = new MoodAnalyser();
             Assert.IsTrue(expected.Equals(expected));
         }
-        
+        [Test]
+        public void GivenImproperClassName_WhenAnalyse_ThrowMoodAnalysisException()
+        {
+            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserFactory.CreateInstance("Moose"));
+            Assert.AreEqual(MoodAnalysisException.MoodList.NoSuch_Class, actual.moodList);
+        }
     }
 }
