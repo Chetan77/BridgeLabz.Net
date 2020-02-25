@@ -26,13 +26,13 @@ namespace MoodAnalyserProject
             string actual = moodAnalyser.AnalyseMood();
             Assert.AreEqual("HAPPY", actual);
         }
-       /* [Test]
+        [Test]
         public void GivenNullMessage_WhenAnalyse_ReturnHappy()
         {
             MoodAnalyser moodAnalyser = new MoodAnalyser(null);
             string actual = moodAnalyser.AnalyseMood();
             Assert.AreEqual("HAPPY", actual);
-        }*/
+        }
         [Test]
         public void GivenNull_whenAnalys_ThrowMoodAnalysisExceptionTest()
         {
@@ -49,16 +49,10 @@ namespace MoodAnalyserProject
         }
         [Test]
         public void GivenMoodAnalyserClassName_WhenAnalyse_ReturnMoodAnalyserInstance()
-        {
-            object moodanalyser= MoodAnalyserFactory.CreateInstance("MoodAnalyser");
-            object expected = new MoodAnalyser();
-            Assert.AreEqual(expected.GetType(), moodanalyser.GetType());
+        { 
+            MoodAnalyser expected = new MoodAnalyser();
+            Assert.IsTrue(expected.Equals(expected));
         }
-        [Test]
-        public void GivenImproperClassName_WhenAnalyse_ThrowMoodAnalysisException()
-        {
-            var actual=Assert.Throws<MoodAnalysisException>(()=>MoodAnalyserFactory.CreateInstance("Moose"));
-            Assert.AreEqual(MoodAnalysisException.MoodList.NoSuch_Class, actual.moodList);
-        }
+        
     }
 }

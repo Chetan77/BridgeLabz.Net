@@ -33,6 +33,10 @@ namespace MoodAnalyserLibrary
                 {
                     throw new MoodAnalysisException(MoodAnalysisException.MoodList.Empty_Mood, "given mood is empty, please provide some mood");
                 }
+                else
+                {
+                    throw new MoodAnalysisException(MoodAnalysisException.MoodList.No_Such_Method, "no method found, enter proper method");
+                }
                 
             }
             //catch (MoodAnalysisException)
@@ -40,11 +44,25 @@ namespace MoodAnalyserLibrary
             //    throw new MoodAnalysisException(MoodAnalysisException.MoodList.Empty_Mood, "given mood is empty, please provide some mood");
             //    //return "HAPPY";
             //}
+            
             catch (NullReferenceException)
             {
-                throw new MoodAnalysisException(MoodAnalysisException.MoodList.No_Mood, "given mood is null,please provide some mood");
+                throw new MoodAnalysisException(MoodAnalysisException.MoodList.No_Mood, "no mood, enter proper me");
+
             }
             return "HAPPY";
+        }
+        public override bool Equals(object obj)
+        {
+            object moodanalyser = MoodAnalyserFactory.CreateInstance("MoodAnalyser");
+            if (moodanalyser.GetType(). Equals(obj.GetType()))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

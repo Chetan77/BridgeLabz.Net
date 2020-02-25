@@ -22,13 +22,13 @@ namespace MoodAnalyserLibrary
                 {
                     throw new MoodAnalysisException(MoodAnalysisException.MoodList.NoSuch_Class, "no such class present");
                 }
-
             }
             catch (NullReferenceException)
             {
                 throw new MoodAnalysisException(MoodAnalysisException.MoodList.NoSuch_Class, "no such class present");
             }
         }
+       
 
     }
 }
