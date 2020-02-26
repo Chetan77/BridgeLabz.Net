@@ -20,20 +20,20 @@ namespace MoodAnalyserProject
             string actual = moodAnalyser.AnalyseMood();
             Assert.AreEqual("HAPPY", actual);
         }
-        [Test]
-        public void GivenAnyMessage_WhenAnalyse_ReturnHappy()
-        {
-            MoodAnalyser moodAnalyser = new MoodAnalyser("i am in any mood");
-            string actual = moodAnalyser.AnalyseMood();
-            Assert.AreEqual("HAPPY", actual);
-        }
-        [Test]
-        public void GivenNullMessage_WhenAnalyse_ReturnHappy()
-        {
-            MoodAnalyser moodAnalyser = new MoodAnalyser(null);
-            string actual = moodAnalyser.AnalyseMood();
-            Assert.AreEqual("HAPPY", actual);
-        }
+        /* [Test]
+         public void GivenAnyMessage_WhenAnalyse_ReturnHappy()
+         {
+             MoodAnalyser moodAnalyser = new MoodAnalyser("i am in any mood");
+             string actual = moodAnalyser.AnalyseMood();
+             Assert.AreEqual("HAPPY", actual);
+         }
+         [Test]
+         public void GivenNullMessage_WhenAnalyse_ReturnHappy()
+         {
+             MoodAnalyser moodAnalyser = new MoodAnalyser(null);
+             string actual = moodAnalyser.AnalyseMood();
+             Assert.AreEqual("HAPPY", actual);
+         }*/
         [Test]
         public void GivenNull_whenAnalys_ThrowMoodAnalysisExceptionTest()
         {
@@ -84,6 +84,12 @@ namespace MoodAnalyserProject
             MoodAnalyser moodAnalyser = (MoodAnalyser)MoodAnalyserReflector.CreateInstance("MoodAnalyser", "i am in happy mood");
             string actual = moodAnalyser.AnalyseMood();
             Assert.AreEqual("HAPPY", actual);
+        }
+        [Test]
+        public void GivenImproperMethodNameHappyMood_WhenAnalyse_ShouldThrowMoodAnalyserException()
+        {
+            var actual = Assert.Throws<MoodAnalysisException>(() => MoodAnalyserReflector.MethodInfo("MoodAnalyser", "i am in happy mood", "AnaseMood"));
+            Assert.AreEqual(MoodAnalysisException.MoodList.No_Such_Method, actual.moodList);
         }
     }
 }

@@ -7,6 +7,7 @@ namespace MoodAnalyserLibrary
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            MoodAnalyserReflector.CreateInstance("MoodAnalyser", "i am in happy mood", "AnalyseMood");
         }
     }
 }
