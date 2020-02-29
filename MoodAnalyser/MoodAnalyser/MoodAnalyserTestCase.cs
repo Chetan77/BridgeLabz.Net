@@ -63,7 +63,8 @@ namespace MoodAnalyserProject
         public void GivenMoodAnalyserClassName_WhenAnalyse_ReturnMoodAnalyserInstance()
         {
             MoodAnalyser expected = new MoodAnalyser();
-            Assert.IsTrue(expected.Equals(expected));
+            bool b = expected.Equals(expected);
+            Assert.AreEqual(true, b);
         }
 
         /// <summary>
@@ -83,7 +84,8 @@ namespace MoodAnalyserProject
         public void GivenMoodAnalyserClassNameWithMessage_WhenAnalyse_ReturnMoodAnalyserInstance()
         {
             MoodAnalyser expected = new MoodAnalyser("jkhdgf");
-            Assert.IsTrue(expected.Equals(expected));
+            bool b = expected.Equals(expected);
+            Assert.AreEqual(true,b);
         }
 
         /// <summary>
