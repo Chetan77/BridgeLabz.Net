@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\bin\Debug\netcoreapp3.1\SingletonStaticInitialization.exe
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\bin\Debug\netcoreapp3.1\SingletonStaticInitialization.deps.json
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\bin\Debug\netcoreapp3.1\SingletonStaticInitialization.runtimeconfig.json
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\bin\Debug\netcoreapp3.1\SingletonStaticInitialization.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\bin\Debug\netcoreapp3.1\SingletonStaticInitialization.dll
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\bin\Debug\netcoreapp3.1\SingletonStaticInitialization.pdb
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\obj\Debug\netcoreapp3.1\SingletonStaticInitialization.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\obj\Debug\netcoreapp3.1\SingletonStaticInitialization.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\obj\Debug\netcoreapp3.1\SingletonStaticInitialization.AssemblyInfo.cs
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\obj\Debug\netcoreapp3.1\SingletonStaticInitialization.dll
+C:\Users\Admin\source\repos\SingletonPatterns\SingletonStaticInitialization\obj\Debug\netcoreapp3.1\SingletonStaticInitialization.pdb

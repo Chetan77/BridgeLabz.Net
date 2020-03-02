@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\bin\Debug\netcoreapp3.1\BillPughSingleton.exe
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\bin\Debug\netcoreapp3.1\BillPughSingleton.deps.json
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\bin\Debug\netcoreapp3.1\BillPughSingleton.runtimeconfig.json
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\bin\Debug\netcoreapp3.1\BillPughSingleton.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\bin\Debug\netcoreapp3.1\BillPughSingleton.dll
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\bin\Debug\netcoreapp3.1\BillPughSingleton.pdb
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\obj\Debug\netcoreapp3.1\BillPughSingleton.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\obj\Debug\netcoreapp3.1\BillPughSingleton.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\obj\Debug\netcoreapp3.1\BillPughSingleton.AssemblyInfo.cs
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\obj\Debug\netcoreapp3.1\BillPughSingleton.dll
+C:\Users\Admin\source\repos\SingletonPatterns\BillPughSingleton\obj\Debug\netcoreapp3.1\BillPughSingleton.pdb

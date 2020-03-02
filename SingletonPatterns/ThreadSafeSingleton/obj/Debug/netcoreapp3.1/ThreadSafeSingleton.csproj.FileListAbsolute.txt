@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\bin\Debug\netcoreapp3.1\ThreadSafeSingleton.exe
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\bin\Debug\netcoreapp3.1\ThreadSafeSingleton.deps.json
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\bin\Debug\netcoreapp3.1\ThreadSafeSingleton.runtimeconfig.json
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\bin\Debug\netcoreapp3.1\ThreadSafeSingleton.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\bin\Debug\netcoreapp3.1\ThreadSafeSingleton.dll
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\bin\Debug\netcoreapp3.1\ThreadSafeSingleton.pdb
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\obj\Debug\netcoreapp3.1\ThreadSafeSingleton.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\obj\Debug\netcoreapp3.1\ThreadSafeSingleton.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\obj\Debug\netcoreapp3.1\ThreadSafeSingleton.AssemblyInfo.cs
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\obj\Debug\netcoreapp3.1\ThreadSafeSingleton.dll
+C:\Users\Admin\source\repos\SingletonPatterns\ThreadSafeSingleton\obj\Debug\netcoreapp3.1\ThreadSafeSingleton.pdb
